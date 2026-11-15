@@ -8,6 +8,10 @@ function setValue(b) {
         return;
     }
 
+    if(input.value === "" && b === "=")
+    {
+        return;
+    }
     if (b === "=") {
         try {
             input.value = eval(input.value)
